@@ -1,0 +1,124 @@
+
+.fullbody{
+	padding: 10px 10px 30px 10px;
+
+}
+.select2-container{
+	width: 100% !important;
+}
+.select2-selection--single, .select2-selection__arrow{
+	height: 32px !important;
+}
+.select2-selection--single .select2-selection__rendered{
+	line-height: 30px !important;
+}
+input[type="file"]{
+	height: 32px !important;
+	line-height: 1.1rem;
+}
+/*.card-header{
+	height: 50px; padding: 10px;
+	}*/
+
+	/* Table Head*/
+	.thead-primary{
+		background-color: #4980B5;
+		color:#efefef;
+	}
+	/*notify js*/
+	.notifyjs-corner{
+		z-index:10000 !important;
+	}
+	button{
+		min-width: 100px;
+	}
+	/*Custom for asset css*/
+	.page-item.active .page-link{
+		background-color: #4980B5;
+	}
+	table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before{
+		top:6px;
+		background-color: red;
+	}
+
+	.text-red{
+		color: red;
+	}
+
+	.nav-tabs a:hover {
+		background: #4980B5 !important;
+		color: #fff;
+	}
+	.nav-tabs .nav-item .nav-link{
+		border: 1px solid #dbdcdc;
+	}
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+		color: #fff;
+		background-color: #4980B5;
+		border: 1px solid #4980B5;
+	}
+
+	.daterangepicker select.monthselect{
+		width: 45% !important;
+	}
+	.daterangepicker select.monthselect.form-control{
+		padding: .375rem .50rem;
+	}
+	.daterangepicker select.yearselect{
+		width: 55% !important;
+	}
+	/*DateRangePicker height width control*/
+	.daterangepicker .calendar{
+		padding: 0px !important;
+	}
+	.daterangepicker .table-condensed tr>td, .daterangepicker .table-condensed tr>th{
+		padding: 5px !important;
+	}
+
+	.daterangepicker td.disabled{
+		color: red !important;
+	}
+
+	.btn-edit{
+		background-color: #4980B5;
+		border-color: #4980B5;
+		color: #fff !important;
+	}
+	.btn-view{
+		background-color: #60B80A;
+		border-color: #60B80A;
+		color: #fff !important;
+	}
+	.btn-check{
+		background-color: #DCBC0F;
+		border-color: #DCBC0F;
+		color: #fff !important;
+	}
+	.btn#storeButton{
+		background-color: #17A2B8;
+		border-color: #17A2B8;
+		color: #fff !important;
+	}
+	.btn#searchButton{
+		background-color: #609907;
+		border-color: #609907;
+		color: #fff !important;
+	}
+
+	/*@media (min-width: 576px)*/
+	.col-smk {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 16.666667%;
+		/*flex: 0 0 14.2857142% !important;
+		max-width: 14.2857142% !important;*/
+		flex: 0 0 12.5% !important;
+		max-width: 12.5% !important;
+	} /* column full 8 column*/
+	.col-smk2 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 20.833333333%;
+		/*flex: 0 0 14.2857142% !important;
+		max-width: 14.2857142% !important;*/
+		flex: 0 0 20.833333333% !important;
+		max-width: 20.833333333% !important;
+	} /* column full 8 column*/

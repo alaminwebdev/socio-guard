@@ -1,0 +1,10 @@
+php artisan --path=/database/migrations/2022_09_26_100414_create_selp_activities_table.php migrate
+php artisan --path=/database/migrations/2022_09_26_103411_create_selp_meeting_activities_table.php migrate
+php artisan --path=/database/migrations/2022_09_26_103413_create_selp_training_activities_table.php migrate
+php artisan --path=/database/migrations/2022_09_26_103415_create_selp_community_activities_table.php migrate
+php artisan --path=/database/migrations/2022_09_26_103417_create_selp_pt_show_activities_table.php migrate
+php artisan --path=/database/migrations/2022_09_26_103421_create_selp_pt_production_activities_table.php migrate
+php artisan --path=/database/migrations/2022_09_26_103516_create_selp_campaign_activities_table.php migrate
+
+php artisan --path=/database/migrations/2022_09_29_102059_create_refferals_table.php migrate
+php artisan --path=/database/migrations/2023_01_04_132806_add_amount_of_money_received_to_survivor_court_cases_table.php migrate

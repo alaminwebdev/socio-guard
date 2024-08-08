@@ -1,0 +1,18 @@
+.daterangepicker select.monthselect{
+	width: 45% !important;
+}
+.daterangepicker select.monthselect.form-control{
+	padding: .375rem .50rem;
+}
+.daterangepicker select.yearselect{
+	width: 55% !important;
+}
+/*DateRangePicker height width control*/
+.daterangepicker .calendar{
+	padding: 5px !important;
+}
+
+input{
+	border: .5px solid #aaa !important;
+	border-radius: 3px !important;
+}

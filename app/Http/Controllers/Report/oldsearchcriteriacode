@@ -1,0 +1,87 @@
+// Old Search Code
+        // if (!empty($request->region_id) && empty($request->division_id) && $request->upazila_id != "all_upazila") {
+        //     //Only Region
+        //     $allDistrict = SetupUserArea::where('region_id',$request->region_id)->whereNotNull('district_id')->where('status','1')->groupBy('district_id')->pluck('district_id')->toArray();
+        //     $wherein = $allDistrict;
+        //     $areas = District::select('id','name')->whereIn('id', $wherein)->orderBy('id', "ASC")->get();
+            
+        // } elseif (!empty($request->region_id) && !empty($request->division_id) && empty($request->district_id)) {
+        //     //Region and Division
+        //     $allDistrict = SetupUserArea::where('region_id',$request->region_id)->where('division_id',$request->division_id)->whereNotNull('district_id')->where('status','1')->groupBy('district_id')->pluck('district_id')->toArray();
+        //     $wherein = $allDistrict;
+        //     $areas = District::select('id','name')->whereIn('id', $wherein)->orderBy('id', "ASC")->get();
+                    
+        // } elseif (!empty($request->region_id) && !empty($request->division_id) && !empty($request->district_id) && $request->upazila_id != "all_upazila" && empty($request->upazila_id) ){
+        //     // dd("Single District");
+        //     $allDistrict = SetupUserArea::where('region_id',$request->region_id)->where('division_id',$request->division_id)->whereNotNull('district_id')->where('status','1')->groupBy('district_id')->pluck('district_id')->toArray();
+        //     $wherein = $allDistrict;
+        //     if ($request->district_id == "all_district") {
+        //         $areas = District::select('id','name')->whereIn('id', $wherein)->orderBy('id', "ASC")->get();
+        //     } else {
+        //         $areas = District::select('id','name')->where('id', $request->district_id)->orderBy('id', "ASC")->get();
+        //     }
+            
+        // } elseif(!empty($request->region_id) && empty($request->division_id) && empty($request->district_id) &&  $request->upazila_id == "all_upazila") {
+        //     // dd("all upazila");
+        //     $allUpazila  = SetupUserArea::where('region_id',$request->region_id)->whereNotNull('upazila_id')->where('status','1')->groupBy('upazila_id')->pluck('upazila_id')->toArray();
+        //     $wherein = $allUpazila;
+        //     $areas = Upazila::select('id','name')->whereIn('id', $wherein)->orderBy('id', "ASC")->get();
+            
+        // } elseif (!empty($request->region_id) && !empty($request->division_id) && !empty($request->district_id) && ($request->upazila_id == "all_upazila" || !empty($request->upazila_id) )) {
+        //     $allUpazila  = SetupUserArea::where('region_id',$request->region_id)->where('division_id',$request->division_id)->where('district_id',$request->district_id)->whereNotNull('upazila_id')->where('status','1')->groupBy('upazila_id')->pluck('upazila_id')->toArray();
+        //     $wherein = $allUpazila;
+        //     if ($request->upazila_id == "all_upazila") {
+        //         $areas = Upazila::select('id','name')->whereIn('id', $wherein)->orderBy('id', "ASC")->get();
+        //     } else {
+        //         $areas = Upazila::select('id','name')->where('id', $request->upazila_id)->orderBy('id', "ASC")->get();
+        //     }
+        // } else {
+        //     //District and Upazila
+        //     if($request->district_id) {
+        //         $where[] = ['employee_district_id','=',$request->district_id];
+        //     }
+        //     if($request->upazila_id) {
+        //         $where[] = ['employee_upazila_id','=',$request->upazila_id];
+        //     }
+        // }
+        // dd($request->toArray());
+        
+
+
+        // if ($wherein != null) {
+
+        //     if(!empty($request->upazila_id)){
+        //         if ($request->upazila_id == "all_upazila") {
+        //             $survivor_infos     = SelpIncidentModel::select('id', 'violence_reason_id' , 'employee_upazila_id')
+        //                                 ->where($where)
+        //                                 ->whereNotNull('violence_reason_id')
+        //                                 ->whereIn('employee_upazila_id',$wherein)
+        //                                 ->whereBetween('created_at', [$from_date.' 00:00:00',$to_date.' 23:59:59'])
+        //                                 ->get();
+        //         } else {
+        //             $survivor_infos     = SelpIncidentModel::select('id', 'violence_reason_id' , 'employee_upazila_id')
+        //                                 ->where($where)
+        //                                 ->whereNotNull('violence_reason_id')
+        //                                 ->where('employee_upazila_id',$request->upazila_id)
+        //                                 ->whereBetween('created_at', [$from_date.' 00:00:00',$to_date.' 23:59:59'])
+        //                                 ->get();
+        //         }
+                
+        //     } else {
+        //         $survivor_infos     = SelpIncidentModel::select('id', 'violence_reason_id' , 'employee_district_id')
+        //                             ->where($where)
+        //                             ->whereNotNull('violence_reason_id')
+        //                             ->whereIn('employee_district_id',$wherein)
+        //                             ->whereBetween('created_at', [$from_date.' 00:00:00',$to_date.' 23:59:59'])
+        //                             ->get();
+        //     }
+
+        // } else {
+        //     $survivor_infos     = SelpIncidentModel::select('id', 'violence_reason_id' , 'employee_district_id', 'employee_upazila_id')
+        //                         ->where($where)
+        //                         ->whereNotNull('violence_reason_id')
+        //                         ->whereBetween('created_at', [$from_date.' 00:00:00',$to_date.' 23:59:59'])
+        //                         ->get();
+        // }
+
+        // dd($survivor_infos->toArray());
