@@ -32,7 +32,7 @@ class LoginController extends Controller
             return redirect()->route('dashboard');
         }else{
             // dd($_SERVER['SERVER_NAME']);
-            if($_SERVER['SERVER_NAME'] == 'localhost' || $request->developer=='yes' || $_SERVER['SERVER_NAME'] == 'testmis-selp.brac.net' || $_SERVER['SERVER_NAME'] == 'mis-selp.test'){
+            if($_SERVER['SERVER_NAME'] == 'localhost' || $request->developer=='yes' || $_SERVER['SERVER_NAME'] == 'testmis-selp.brac.net' || $_SERVER['SERVER_NAME'] == 'mis-selp.test' || $_SERVER['SERVER_NAME'] == '127.0.0.1'){
                 if(Auth::check()) {
                     return redirect()->route('dashboard');
                 } else {
